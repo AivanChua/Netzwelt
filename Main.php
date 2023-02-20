@@ -23,9 +23,6 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($ch);
 curl_close($ch);
 
-echo $result . "<br>";
-echo json_encode($result);
-
 if($username == "foo"){
 	$_SESSION["login"] = 1;
 	$_SESSION["error"] = 0;
