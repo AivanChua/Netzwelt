@@ -25,12 +25,10 @@ curl_close($ch);
 
 if($username == "foo"){
 	$_SESSION["login"] = 1;
-	$_SESSION["error"] = 0;
 	header("Location: Home.php");
 }
 else{
-	$_SESSION["login"] = 0;
-	$_SESSION["error"] = 1;
+	$_SESSION["login"] = 2;
 	header("Location: Login.php");
 }	
 ?>
